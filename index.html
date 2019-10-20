@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Polygon Canvas</title>
+        <link href="style.css" REL=StyleSheet>
+        <script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+        <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+    </head>
+    <body>
+        <section class="intro">
+                <h1>Draw The Outline of A Dog</h1>
+                <ol>
+                    <li>In this task, you will be asked to draw the outline of a dog on an image.</li>
+                    <li>Click your mouse to create small squares on the boundary of a bus. The squares will be connected to make outline.</li>
+                    <li>Press <span class="red">any key</span> to undo.</li>
+                    <li>Make the outline very tight to the boundary.</li>
+                    <li>Remember to make a <span class="red">close polygon.</span></li>
+                    <li>Type your comment(optional).</li>
+                    <li>Press the Submit button to submit the result.</li>
+                </ol>
+                <hr>
+                <table class="example">
+                    <tr>
+                        <th>Good Example</th>
+                        <th>Bad Example</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            The outline is tight to the object.<br>
+                            <img class="example" width="60%" src="images/goofExample.png">
+                        </td>
+                        <td>
+                            The outline is too loose.<br>
+                            <img class="example" width="60%"  src="images/badExample.png"> 
+                        </td>
+                    </tr>
+                </table>   
+                <button><a href="#start">Start</a></button>
+        </section>
+        <hr>
+        <form name='mturk_form' method='post' id='mturk_form' action='https://workersandbox.mturk.com/mturk/externalSubmit'>
+            <input type='hidden' value='' name='assignmentId' id='assignmentId'/>
+            <h1><a id="start"></a>Canvas</h1>
+            <p>Please draw the outline.</p>
+            <canvas id="myCanvas" width="800" height="700"></canvas>
+            <h3>Comment</h3>
+            <p><textarea name='comment' cols='80' rows='3'></textarea></p>
+            <p><input type='submit' id='submitButton' value='Submit' /></p>
+        </form>
+        <script src="draw.js"></script>
+        <script src="AMT.js"></script>
+    </body>
+</html>

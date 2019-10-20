@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+ol{
+    text-align: left;
+}
+.red{
+    color:red;
+}
+.intro{
+    margin:50px 0;
+}
+.example{
+    margin: 30px 0;
+}
+form{
+    margin:50px 0;
+    text-align: center;
+}
