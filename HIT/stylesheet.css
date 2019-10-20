@@ -1,0 +1,45 @@
+@charset "UTF-8";
+body{
+    width:100%;
+    font-size:18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    color:peru;
+}
+.body-wrapper{
+    padding:3%;
+    border:1px solid rgb(110,110,110);
+    box-sizing: border-box;
+}
+.instruction{
+    padding:30px 0;
+    border-bottom: 1px solid black;
+}
+.example{
+    padding:30px 10px;
+    border-bottom: 1px solid black;
+}
+.redtext{
+    color: red;
+}
+.continue{
+    padding: 40px 0;
+    border-bottom: 1px solid rgb(110,110,110);
+}
+a{
+    text-decoration: none;
+    color:blakc;
+}
+a:visited{
+    color:black;
+}
+img{
+    max-height:100%;
+    max-width:100%;
+}
+form{
+    padding:70px 0;
+}
+
