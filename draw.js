@@ -59,7 +59,7 @@ canvas.addEventListener('mousedown', function(evt){
     mouseClickPositions.push(mousePos);
     renderGraphics();
 }, false);
-window.addEventListener('Backspace', function(evt){
+window.addEventListener('keydown', function(evt){
     mouseClickPositions.pop();
     renderGraphics();
 });
