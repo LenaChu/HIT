@@ -5,7 +5,10 @@ var imageObj = new Image();
 imageObj.onload = function(){
     renderGraphics();
 }
-imageObj.src ="images/dog3.jpg"
+var imageParam = new(window.location.search);
+var ImageSrc = imageParam.get("image")
+imageObj.src = ImageSrc;
+
 
 /*var xCoord = 100;
 var yCoord = 200;
@@ -63,3 +66,4 @@ window.addEventListener('keydown', function(evt){
     mouseClickPositions.pop();
     renderGraphics();
 });
+var dataURL = canvas.toDataURL();
