@@ -53,6 +53,7 @@ canvas.addEventListener('mousedown', function(evt){
     var mousePos = getMousePos(evt);
     mouseClickPositions.push(mousePos);
     renderGraphics();
+    document.getElementById('coordinant').value = JSON.stringify(mouseClickPositions);
 }, false);
 
 window.addEventListener('keydown', function(event){
@@ -62,6 +63,6 @@ window.addEventListener('keydown', function(event){
     renderGraphics();
 }
 });
-document.getElementById('assignmentId').value = JSON.stringify(mouseClickPositions);
+
 console.log(mouseClickPositions);
 turkSetAssignmentID();  
