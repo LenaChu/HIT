@@ -61,6 +61,6 @@ window.addEventListener('key', function(evt){
     renderGraphics();
 }
 });
-document.getElementById('assignmentId').value = mouseClickPositions;
+document.getElementById('assignmentId').value = JSON.stringify(mouseClickPositions);
 console.log(mouseClickPositions);
 turkSetAssignmentID();  
