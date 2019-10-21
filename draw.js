@@ -8,8 +8,8 @@ imageObj.onload = function(){
 //var imageParam = new(window.location.search);
 //var ImageSrc = imageParam.get("image")
 var searchParam = new URLSearchParams(window.location.search);
-var image1Value = searchParam.get("image");
-imageObj.src=image1Value;
+var imageValue = searchParam.get("image");
+imageObj.src=imageValue;
 
 
 /*var xCoord = 100;
@@ -68,6 +68,6 @@ window.addEventListener('keydown', function(evt){
     mouseClickPositions.pop();
     renderGraphics();
 });
-var dataURL = canvas.toDataURL();
-document.getElementById('drawData').value = dataURL;
-console.log(dataURL);
+
+document.getElementById('drawData').value = mouseClickPositions;
+console.log(mouseClickPositions);
