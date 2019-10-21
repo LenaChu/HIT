@@ -55,8 +55,8 @@ canvas.addEventListener('mousedown', function(evt){
     renderGraphics();
 }, false);
 
-var key = event.which || event.keyCode || event.charCode;
-window.addEventListener('keydown', function(evt){
+window.addEventListener('keydown', function(event){
+    var key = event.which || event.keyCode || event.charCode;
     if (key ===8){
     mouseClickPositions.pop();
     renderGraphics();
