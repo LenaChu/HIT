@@ -11,16 +11,6 @@ var searchParam = new URLSearchParams(window.location.search);
 var imageValue = searchParam.get("image");
 imageObj.src=imageValue;
 
-
-/*var xCoord = 100;
-var yCoord = 200;
-var width = 400;
-var height = 100;
-
-context.fillStyle = "red";
-context.fillRect(xCoord, yCoord, width, height);
-*/
-
 function getMousePos(evt){
     var mousePosX = evt.clientX;
     var mousePosY = evt.clientY;
