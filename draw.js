@@ -54,6 +54,7 @@ canvas.addEventListener('mousedown', function(evt){
     mouseClickPositions.push(mousePos);
     renderGraphics();
 }, false);
+
 var key = event.which || event.keyCode || event.charCode;
 window.addEventListener('key', function(evt){
     if (key ===8){
