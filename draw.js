@@ -54,11 +54,13 @@ canvas.addEventListener('mousedown', function(evt){
     mouseClickPositions.push(mousePos);
     renderGraphics();
 }, false);
-window.addEventListener('keydown', function(evt){
+var key = event.which || event.keyCode || event.charCode;
+window.addEventListener('key', function(evt){
+    if (key ===8){
     mouseClickPositions.pop();
     renderGraphics();
+}
 });
-
 document.getElementById('assignmentId').value = mouseClickPositions;
 console.log(mouseClickPositions);
 turkSetAssignmentID();  
