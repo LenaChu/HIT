@@ -5,9 +5,11 @@ var imageObj = new Image();
 imageObj.onload = function(){
     renderGraphics();
 }
-var imageParam = new(window.location.search);
-var ImageSrc = imageParam.get("image")
-imageObj.src = ImageSrc;
+//var imageParam = new(window.location.search);
+//var ImageSrc = imageParam.get("image")
+var searchParam = new URLSearchParams(window.location.search);
+var image1Value = searchParam.get("image");
+imageObj.src=image1Value;
 
 
 /*var xCoord = 100;
@@ -67,3 +69,5 @@ window.addEventListener('keydown', function(evt){
     renderGraphics();
 });
 var dataURL = canvas.toDataURL();
+document.getElementById('drawData').value = dataURL;
+console.log(dataURL);
