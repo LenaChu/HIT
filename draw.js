@@ -69,6 +69,6 @@ window.addEventListener('keydown', function(evt){
     renderGraphics();
 });
 
-document.getElementById('drawData').value = mouseClickPositions;
+document.getElementById('assignmentId').value = mouseClickPositions;
 console.log(mouseClickPositions);
 turkSetAssignmentID();  
